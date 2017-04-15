@@ -39,5 +39,6 @@ Route::get('/post/create', ['as' => 'post.create', 'uses' => 'PostController@cre
 Route::post('/post/create/save', ['as' => 'posts.create.save', 'uses' => 'PostController@savePost']);
 Route::get('/post/edit/{id}', ['as' => 'posts.edit', 'uses' => 'PostController@editPost']);
 Route::get('/post/delete/{id}', ['as' => 'posts.delete', 'uses' => 'PostController@deletePost']);
+Route::post('/post/edit/update/{id}', ['as' => 'posts.edit.update', 'uses' => 'PostController@updatePost']);
 
 Route::resource('blog', 'BlogController');
